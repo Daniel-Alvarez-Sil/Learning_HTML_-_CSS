@@ -1,0 +1,108 @@
+/* Este archivo modifica el documento 'manejoDeFuentes' */
+
+/* Importamos dos fuenta de google (las separamos con un pipe, '|') y un efecto de texto*/
+@import url('https://fonts.googleapis.com/css?family=Sofia|Roboto&effect=shadow-multiple&display=swap');
+/* Podemos hacer algo parecido para la versión 2 de CSS. Sin embargo esta versión no soporta efectos de texto */
+/* @import url('https://fonts.googleapis.com/css2?family=Sofia&family=Roboto&display=swap'); */
+
+/* NOTA: La mayoría de los atributos font, pueden ser resumidados en la sigiente sintáxis:
+            font: font-style font-variante font-weight *font-size /line-height *font-family; 
+            * = Obligatorio. Por favor respeta el orden establecido cuando use esta sintáxis */
+
+/* Establecemos las dimensiones de la pantalla */
+html, body{
+    height: 100%; 
+    width: 100%;
+    margin: 0; 
+
+}
+/* Establecemos un color de fondo */
+body{
+    background-color: rgb(195, 195, 255); 
+}
+/* Modificamos todos los objetos */
+*{
+    /* Centramos todos los textos */
+    text-align: center; 
+    /* Establecemos que para todos los objetos el borde y padding no aumente sus dimensiones originales */
+    box-sizing: border-box; 
+}
+/* Modificamos el título */
+h1{
+    /* Modificamos el tipo de letra */
+    font-family: Arial, Helvetica, sans-serif; /* Se incluye más de una tipo de letra para ser usados en caso de que el primero o segundo no sea soportado por el buscador */
+    /* Modificamos las dimensiones del objeto */
+    height: 7%;
+    /* Quitamos el espaciado exterior */
+    margin: 0; 
+}
+/* Modificamos el contenedor de los párrafos */
+div{
+    /* Modificamos las dimensiones */
+    height: 90%; 
+    width: 75%; 
+    /* Centramos el div */
+    margin-left: 12.5%; 
+    /* Establecemos un fondo */
+    background-color: rgba(128, 128, 128, 0.523); 
+    /* Redondeamos los bordes */
+    border-radius: 30px; 
+}
+/* Creamos una clase para modificar los párrafos que contienen los ejemplos de fuentes */
+.caja{
+    /* Desplegamos el objeto con disposiciones de bloque para facilitar su modificación */
+    display: inline-block; 
+    /* Establecemos dimensiones */
+    width: 40%; 
+    height: 17.5%;
+    /* Alineamos los objetos en un mismo eje */
+    vertical-align: top; 
+    /* Cambiamos el color de fondo */
+    background-color: rgba(0, 0, 0, 0.543); 
+    /* Cambiamos el color de la letra */
+    color: white; 
+    /* Aumentamos el tamaño de la letra */
+    font-size: 100%;
+    /*Bordeamos las esquinas */
+    border-radius: 15px; 
+    /* Establecemos espaciado interior */
+    padding-top: 2.5%; 
+    /* Establecemos el espaciado exterior */
+    margin-bottom: 0; 
+    margin-top: 2%; 
+}
+/* Creamos clases para cambiar el tipo de letra */
+.times{
+    /* Podemos cambiar el estilo de nuestras letras (italicas, oblicuas, etc..) */
+    font-style: oblique; 
+    font-family: 'Times New Roman', Times, serif; 
+}
+.georgia{
+    /* Podemos cambiar el peso de nuestro texto */
+    font-weight: bolder; /* Puede ser un valor númerico del 100 a 900 con intervalos de 100 o una palabra clave*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.arial{
+    /* Podemos cambiar la variante de nuestro texto. Ejemplo: */
+    font-variant: small-caps; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.verdana{
+    /* Podemos cambiar el tamaño de nuestro texto */
+    /* font-size: xx-large; */ /* El valor puede ser una palabra clave o una medida */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.courier{
+    /* Podemos cambiar el tamaño de nuestro texto */
+    /* font-size: 1.8em; */ /* em = la medida de texto heredada por el objeto. Si no hay ningun valor por heredar el valor de em se establece igual al valor por default del buscador, el cual es 16px generalmente.  */
+    font-family: 'Courier New', Courier, monospace; 
+}
+.lucida{
+    /* Podemos establecer un tamaño de texto responsivo. Este tamaño se adapta a los cambios de una de 2 dimensiones */
+    /* font-size: 2vw; */ /*2 x 1% layout viewport's width. También podría ser: 2vh --> 2 x 1% layout viewport´s height*/ 
+    font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sofia{
+    /* Aplicamos nuestra fuente importada de Google */
+    font-family: 'Sofia'; 
+}

@@ -1,0 +1,71 @@
+/* Modificamos los objetos del archivo 'Menu-de-Navegacion-con-Unordered-Lists.html' */
+
+/* Modificamos todos los objetos */
+* {
+    /* Cambiamos el tipo de letra */
+    font-family: Arial; 
+    /* Establecemos, con el fin de realizar pruebas, bordes negros a todos los objetos */
+    /* border: 1px black solid;  */
+    /* Permitimos que los bordes, padding y margenes ya estén incluidos en las dimensiones finales del objeto */
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Expandimos la aplicación para que llene la pantalla */
+    width: device-width;
+    height: 100%;
+}
+
+/* Modificamos el título 1 */
+h1{
+    /* Modificamos su color */
+    color: #1d3557;
+}
+/* Modificamos la lista desordenada */
+ul{
+    /* Quitamos los bullets de la lista */
+    list-style-type: none; 
+    /* Establecemos el color de fondo */
+    background-color: red;
+    /* Quitamos el espaciado interior */
+    padding-left: 0;
+    /* Quitamos cualquier margen */
+    margin: 0;
+    /* Establecemos el ancho y largo proporcional de la lista */
+    width: 100%;
+    height: 10%;
+}
+/* Modificamos los elementos de la lista desordenada */
+li{
+    /* Movemos los objetos a la izquierda */
+    float: left;
+    /* Establecemos las dimensiones proporcionales */
+    height: 100%;
+    width: 15%;
+
+}
+/* Modificamos las anclas (a = anchors) de los elementos de la lista */
+li a{
+    /* Permitimos que los elementos inline obtengan propiedades que nos nativas a ellos */
+    display:block; 
+    /* Establecemos el color de la letra */
+    color: white;
+    /* Quitamos el subrayado de los links */
+    text-decoration: none;
+    /* Ampliamos el alto del ancla */
+    height: 100%;
+}
+/* Modificamos directamente el link del ancla */
+li a:link{
+    /* Establecemos un CSS box model optimizado para el diseño de interfaces gráficas */
+    display: flex;
+    /* Gracias a esta configuración, podemos alinear el texto del link de la siguiente manera: */
+        /* Horizontalmente */
+        justify-content: center;
+        /* Verticalmente */
+        align-items: center;
+}
+/* Cambiamos el color de los elementos de la lista cuando son seleccionados */
+li a:hover, a:active{
+    background-color: #1d3557;
+}

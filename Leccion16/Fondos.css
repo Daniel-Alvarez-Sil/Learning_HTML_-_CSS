@@ -1,0 +1,41 @@
+/* Este archivo modifica el archivo 'Fondos.html' */
+
+/* Modificamos todos los objetos */
+*{
+    /* Modificamos el tipo de letra */
+    font-family: Arial; 
+    /* Centramos el texto */
+    text-align: center; 
+    /* Quitamos los margenes */
+    margin: 0; 
+}
+/* Modificamos el objeto HTML */
+html{
+    /* Establecemos las dimensiones del objeto */
+    width: 100%; 
+    height: 100%; 
+
+}
+/* Modificamos el fondo de la pantalla */
+body{
+    /* Modificamos el color de fondo */
+    /* background-color: dodgerblue;  */
+    /* Establecemos una imagen de fondo */
+    /* background-image: url(fondo.png);  */
+    /* Modificamos el color de las letras */
+    /* Establecemos que el fondo se mueva con el mouse */
+    /* background-attachment: fixed;  */
+    color: cornsilk;     
+    /* Establecemos las dimensiones */
+    height: 200%; 
+    width: 100%; 
+   
+    /* Establecemos la mayoría de las propiedades previamente mencionadas (las 3 primeras) en una sola línea */
+    background: fixed dodgerblue url(fondo.png); 
+    /* Establecemos el tamaño del fondo (ocupa toda la página) */
+    background-size: cover; 
+}
+/* Modificamos el título */
+h1{
+    background-color: rgb(6, 99, 220);
+}

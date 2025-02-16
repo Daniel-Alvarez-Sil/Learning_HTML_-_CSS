@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Z-Index </title>
+    <!-- Implementamos las hojas de estilos de CSS -->
+    <link rel = 'stylesheet' href = 'posicionamientoDeElementos.css'>
+</head>
+<body>
+    <h1>
+        Atributo 'z-index': 
+    </h1>
+    <p>
+        El atributo z-index nos permite modificar la superposición de los objetos en el plano z. La pantalla cuenta con 3 ejes: 
+        <br/> <br/>
+        - Eje X (izquierda a derecha) <br/>
+        - Eje Y (arriba a abajo) <br/>
+        - Eje Z (de la pantalla al usuario)
+        <br/> <br/>
+        El atributo de z-index es aplicable solo dentro del contenedor o ancestro más cercano del objeto.  De manera normal, el orden que siguen los objetos en el contexto Z es el siguiente: 
+        <br/> <br/>
+        - Objetos no Posicionados (con posicionamiento 'static') en el orden en el que son definidos en el documento HTML <br/>
+        - Objetos Posicionados (con posicionamiento no estático) en el orden en el que son definidos en el documento HTML <br/>
+        A pesar de esto, nosotros podemos modificar esta disposición de superposiciones usando el atributo en cuestión. 
+        <br/> <br/>
+        Imagen explicativa y Ejemplos: 
+        
+    </p>
+    <div>
+        <img src = 'z-index.png' alt = 'Texto Alternativo por si la Imagen no Carga'/>
+    </div>
+    <a class = 'boton blanco relative' href = 'posicionamientoDeElementos.html' style = 'left: 5%; '>
+        <p>
+            Z-Index 2
+        </p>
+    </a>
+    <a class = 'boton blanco static' href = 'posicionamientoDeElementos.html' target = '_blank'>
+        <p>
+            Z-Index 1
+        </p>
+    </a>
+    <a class = 'boton blanco relative' href = 'posicionamientoDeElementos.html' style = 'right: 15%; top: 30%; width: 30%;'>
+        <p>
+            Z-Index 3
+        </p>
+    </a>
+</body>
+</html>

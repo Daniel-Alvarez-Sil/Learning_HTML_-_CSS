@@ -1,0 +1,38 @@
+/* Este archivo contiene las hojas de estilos para el archivo 'manejoDeIconos.html' */
+
+/* Modificamos todos los objetos */
+*{
+    /* Centramos todos los textos */
+    text-align: center; 
+    /* Establecemos el tipo de letra */
+    font-family: Arial, Helvetica, sans-serif; 
+}
+/* Modificamos el ícono de BootStrap */
+.iconoBS{
+    /* Lo desplegamos como bloque para que sea establecido en un eje vertical */
+    display: block; 
+    /* Cambiamos su color */
+    color: blue; 
+    /* Cambiamos su tamaño */
+    font-size: 400%; 
+}
+/* Modificamos los iconos de Google */
+.iconoG{
+    /* Lo desplegamos como bloque para que aparezca sobre un eje vertical */
+    display: block; 
+    /* Cambiamos el color de los íconos */
+    color: red; 
+    /* Cambiamos las dimensiones */
+    font-size: 400%; 
+}
+/* Modificamos los iconoes de Ionic */
+.iconoIon{
+    /* Los desplegamos sobre un eje vertical */
+    display: block; 
+    /* Cambiamos el color */
+    color: purple; 
+    /* Cambiamos sus dimensiones */
+    font-size: 400%; 
+    /* Lo alineamos */
+    margin: auto; 
+}

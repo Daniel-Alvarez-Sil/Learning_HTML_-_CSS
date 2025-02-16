@@ -1,0 +1,35 @@
+/* Modificamos los elementos HTML del archivo 'Links-con-CSS.html' */
+
+/* Modificamos todos los elementos del archivo */
+* {
+    font-family: Arial;
+}
+
+/* Modificamos el primer título */
+h1 {
+    color: cadetblue;
+}
+
+/* Modificamos la manera en la que se despliegan normalmente los links */
+a:link {
+    text-decoration: none;   
+}
+
+/* Modificamos el display de los links una vez que ya han sido visitados */
+a:visited {
+    color: aquamarine;
+    text-decoration: none; 
+}
+
+/* Modificamos el display de los links cuando el mouse pasa sobre ellos */
+a:hover {
+    color: blueviolet;
+    text-decoration: underline;    
+}
+
+/* Modificamos el display de los links cuando el mouse hace click sobre ellos */
+a:active{
+    color: red; 
+    text-decoration: underline; 
+}
+

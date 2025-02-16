@@ -1,0 +1,142 @@
+/* Este archivo contiene las hojas de estilo para el documento 'posicionamientoDeElementos.html' */
+
+/* Modificamos todos los objetos HTML */
+*{
+    /* Centramos todos los textos */
+    text-align: center; 
+    /* Cambiamos el tipo de letra */
+    font-family: Arial; 
+}
+/* Modificamos las dimensiones y espaciado de la pantalla */
+html, body{
+    width: 100%; 
+    height: 100%; 
+    margin: 0; 
+    /* Establecemos que el borde no aumente al tamaño de las dimensiones originales */
+    box-sizing: border-box; 
+}
+/* Modificamos los títulos */
+h1{
+    /* Modificamos el texto para que sea responsivo */
+    line-height: 1vh; 
+    font-size: 4vw; 
+}
+/* Modificamos los botones del MENÚ */
+.boton{
+    /* Habilitamos la posición 'relative' */
+    /* position: relative;  */
+    /* Establecemos el despliegue horizontal pero manteniendo las propiedades de block mediante la propiedad flex */
+    display: inline-flex; 
+    /* Alineamos los objetos a traves de su centro */
+    vertical-align: top; 
+    /* Modificamos las dimensiones y espaciado */
+    width: 17.5%; 
+    height: 30%; 
+    margin-top: 1%; 
+    /* Establecemos un borde */
+    border: black 5px solid;    
+    /* Alineamos los elementos del botón */
+        /* Verticalmente */
+        align-items: center; 
+        /* Horizontalmente */
+        justify-content: center; 
+    /* Eliminamos la decoración del texto */
+    text-decoration: none; 
+}
+a.boton{
+    /* Establecemos que cuando el cursor pase sobre este objeto su ícono cambie */
+    cursor: pointer; 
+}
+/* Modificamos los textos de los botones */
+p{
+    /* Establecemos el tamaño del texto */
+    font-size: 2vw;
+    /* Modificamos el espaciado de las letras */
+    letter-spacing: -0.04vw;     
+}
+/* Clases para modificar el color de fondo y de texto de un objeto */
+.violeta{
+    background-color: purple; 
+    color: white; 
+}
+.azul{
+    background-color: blue; 
+    color: white; 
+}
+.verde{
+    background: green; 
+    color: white; 
+}
+.amarillo{
+    background-color: yellow; 
+    color: black; 
+}
+.rojo{
+    background-color: red; 
+    color: white; 
+}
+.blanco{
+    background-color: white; 
+    color: black; 
+}
+.negro{
+    background-color: black; 
+    color: white; 
+}
+/* Clases para modificar el posicionamiento de los objetos de los ejemplos */
+.static{
+    position: static; 
+}
+.relative{
+    position: relative; 
+    top: 25%; 
+}
+.fixed{
+    position: fixed; 
+    top: 50%; 
+    right: 0;    
+}
+.absolute{
+    position: absolute; 
+    bottom: 1%; 
+}
+.sticky{
+    position: sticky; 
+    top: 10%; 
+}
+/* Creamos un div para usar en la explicación del contexto de overflow */
+div.overflow{
+    /* Establecemos un borde negro */
+    border: 5px black solid; 
+    /* Establecemos sus dimensiones y espaciado */
+    width: 30%; 
+    height: 30%; 
+    margin-top: 1%; 
+    /* Desplegamos el objeto en un eje horizontal */
+    display: inline-block; 
+    /* Alineamos el objeto */
+    vertical-align: top; 
+}
+/* Creamos clases para modificar el atributo de overflow */
+.visible{
+    overflow: visible; 
+}
+.hidden{
+    overflow: hidden;
+}
+.auto{
+    overflow: auto; 
+}
+.scroll{
+    overflow: scroll; 
+}
+/* Creamos clases para modificar el atributo de float */
+.left{
+    float: left; 
+}
+.right{
+    float: right; 
+}
+.clear{
+    clear: both; 
+}

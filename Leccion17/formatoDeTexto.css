@@ -1,0 +1,55 @@
+/* Este archivo contiene las hojas de estilos para el documento: 'formatoDeTexto.html' */
+
+/* Modificamos todos los objetos */
+*{
+    /* Cambiamos el tipo de letra */
+    font-family: Arial; 
+    /* Centramos todos los textos */
+    text-align: center; 
+}
+/* Modificamos el título */
+h1{
+    /* Modificamos el color de las letras */
+    color: #ef476f; 
+    /* Modificamos el color del fondo */
+    background-color: beige; 
+    /* Convertimos el texto a mayúsculas */
+    text-transform: uppercase; 
+    /* Añadimos sombra al texto */
+    text-shadow: 2px 2px 2px #ced4da; /* Parámetros: Sombra en Eje X, Sombra en Eje Y, Cantidad de Difusión, Color de la Sombra   */ 
+    /* Separamos (valor positivo) o acercamos (valor negativo) las letras de/a si mismas*/
+    letter-spacing: 5px;
+    /* Separamos (valor positivo) o acercamos (valor negativo) las letras de/a si mismas */
+    word-spacing: -2px; 
+    /* Establecemos decoración de dos opciones en el texto */
+    text-decoration: overline underline; 
+}
+/* Modificamos el párrafo de la página */
+p{
+    /* Desplegamos el párrafo con propiedades de bloque */
+    display: block; 
+    /* Cambiamos el color de fondo */
+    background-color: #219ebc; 
+    /* Añadimos un espaciado interior */
+    padding: 2%; 
+    /* Establecemos las dimensiones */
+    width: 50%; 
+    /* Centramos el objeto */
+    margin-left: 25%; 
+    /* Redondeamos las esquinas */
+    border-radius: 5px;
+    /* Cambiamos el color de la fuente */
+    color: white; 
+    /* Justificamos el texto */
+    text-align: justify; 
+    /* Podemos cambiar la dirección del texto */
+    direction: ltr; /* rtl = right to left, ltr = left to right */
+    /* Podemos embellecer el texto con una o varias opciones */
+    text-decoration: line-through /*underline*/;
+    /* Establecemos una sangría */
+    text-indent: 30px; 
+    /* Establecemos el tamaño entre líneas */
+    line-height: 3; 
+    /* Establecemos que el texto no está limitado a su objeto */
+    /* white-space: nowrap;  */
+}

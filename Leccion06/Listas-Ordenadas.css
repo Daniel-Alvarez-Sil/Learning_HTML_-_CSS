@@ -1,0 +1,28 @@
+/* Esta hoja de estilos modifica el archivo 'Listas-Ordenadas.html' */
+
+/* Modificamos el tipo de letra de todos los elementos */
+* {
+    font-family: Arial;
+}
+/* Modificamos la lista */
+ol {
+    /* Quitamos las numeraciones de elementos */
+    list-style: none; 
+    /* Inicializamos un contador para usar */
+    counter-reset: iContador; 
+}
+/* Modificamos los elementos de la lista */
+ol li {
+    /* Incrementamos el contador para cada nuevo elemento */
+    counter-increment: iContador;
+}
+/* Añadimos la palabra 'Curso' junto con el valor del contador antes de cada elemento de la lista */
+ol li::before {
+    content: 'Curso ' counter(iContador) ': ';
+    color: orangered;
+}
+
+/* Añadimos un punto al final de cada elemento */
+ol li::after {
+    content: '.';
+}

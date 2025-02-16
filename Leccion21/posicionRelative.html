@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Posicion Relative </title>
+    <link rel = 'stylesheet' href = 'posicionamientoDeElementos.css'/>
+</head>
+<body>
+    <h1>
+        Posicion Relative: 
+    </h1>
+    <p>
+        Con este parámetro de posición, los valores de top, right, bottom y left son relativos a sí mismo. Un objeto con este posicionamiento no afecta a otros elementos y puede aparecer
+        sobrepuesto a otros objetos. Sin embargo, con esta configuración, el objeto si tiene un espacio definido en el flujo del documento/pantalla. 
+        <br/> Ejemplo: 
+    </p>
+    <div class = 'boton'>
+        <p>
+            Ubicación original <br/> --- >
+        </p>
+    </div>
+    <a class = 'boton azul relative' href = 'posicionamientoDeElementos.html'>
+        <p>
+            Relative <br/> top: 25%
+        </p>
+    </a>
+    <div class = 'boton'>
+        <p>
+            Ubicación original <br/> < ---
+        </p>
+    </div>
+</body>
+</html>

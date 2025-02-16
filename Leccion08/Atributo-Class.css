@@ -1,0 +1,33 @@
+/* Este hoja de estilos modifica el archivo 'Atributo-Class.html' */
+/* El atributo class de HTML nos permite implementar los estilos de una clase de CSS */
+
+/* Creación de la Clase 'div' */
+.div{
+    text-align: center;
+    border: 5px black solid;
+}
+/* Creación de la Clase 'div1' */
+.div1{
+    /* Modificamos el color del borde */
+    border-color: blue;
+}
+/* Creación de la Clase 'div2' */
+.div2{
+    /* Modificamos el color del borde */
+    border-color: red; 
+}
+/* Modificamos todos los objetos */
+* {
+    /* Cambiamos el tipo de letra */
+    font-family: Arial; 
+}
+/* Creación de la clase span */
+.span {
+    /* Agrandamos la letra y la hacemos más gruesa */
+    font-size: larger;
+    font-weight: 900;
+    /* Modificamos el color de la letra */
+    color: orange;
+    /* Añadimos un borde */
+    border: 2px grey solid;     
+}

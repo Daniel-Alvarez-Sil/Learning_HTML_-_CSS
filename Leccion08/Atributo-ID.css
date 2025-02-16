@@ -1,0 +1,38 @@
+/* Esta hoja de estilos modifica el archivo 'Atributo-ID' */
+
+/* Modificamos el tipo de letra de todos los objetos */
+* {
+    font-family: Arial;
+}
+/* Modificamos el alto de la pantalla */
+html, body {
+    height: 100%;
+}
+/* Modificamos los divs */
+div {
+    /* Usamos un flex container para facilitar el display de la información */
+    display: flex;
+    /* Llevamos los objetos hacia la izquierda */
+    float: left;
+    /* Establecemos las dimensiones del objeto */
+    width: 25%;
+    height: 30%;
+    /* Posicionamos los elementos de este objeto en el centro */
+    align-items: center;
+    justify-content: center; 
+    /* Establecemos un borde negro para todos los objetos */
+    border: 5px black solid;
+}
+/* Creación de ID´s */
+#divLeft{
+    /* Establecemos un margen izquierdo, solo para el primer div (de izquierda a derecha) */
+    margin-left: 12.5%;
+}
+#divCenter {
+    /* Modificamos el color */
+    border-color: lawngreen;
+    /* Modificamos las dimensiones y margenes */
+    width: 23%;
+    margin-left: 1%;
+    margin-right: 1%;
+}

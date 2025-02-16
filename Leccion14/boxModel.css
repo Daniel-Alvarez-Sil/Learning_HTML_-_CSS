@@ -1,0 +1,89 @@
+/* Este archivo modifica el documento boxModel.html */
+
+/* Modificamos todos los objetos */
+*{
+    /* Establecemos un borde a todos los objetos */
+    border: 5px black solid; 
+    /* Establecemos que las dimensiones de los bordes y padding no añadan más espacio a las dimensiones originales del objeto, sino que la dimensión total del objeto ya considere los bordes y paddings */
+    box-sizing: border-box; 
+    /* Quitamos los margenes (espaciado exterior) */
+    margin: 0;
+    /* Modificamos el tipo de letra */
+    font-family: Arial; 
+    /* Centramos los textos */
+    text-align: center; 
+}
+/* Establecemos las dimensiones de la pantalla */
+html, body{
+    width: 100%; 
+    height: 100%; 
+}
+/* Modificamos los títulos del documento */
+h1{
+    height: 15%; 
+}
+/* Modificamos el div que hospeda los conceptos del boxModel */
+#conceptos{
+    /* Habilitamos la forma de despliegue de 'inline-block' para que el objeto se posiciones en un eje horizontal */
+    display: inline-block; 
+    /* Alineamos el objeto para que se alinea a la parte más alta de su antecesor */
+    vertical-align: top; 
+    /* Establecemos sus dimensiones */
+    width: 25%;
+    height: 42.5%;  
+}
+/* Modificamos los conceptos del boxModel */
+h2{
+    /* Modificamos el tamaño de la letra */
+    font-size: x-small;
+}
+/* Modificamos los colores de los conceptos del boModel mediante la acción de asociarlos a una de las siguientes clase */
+.naranja{
+    color: orange; 
+}
+.azul{
+    color: blue; 
+}
+.rojo{
+    color: red; 
+}.aquamarino{
+    color: aquamarine; 
+}
+
+/* Modificamos el Div que hospeda nuestro boxModel del documento */
+#boxDiv{
+    /* Establecemos el modo de despliegue de 'inline-flex' para facilitar la modificación de la ubicacion de objetos y para que sea posicionado en un eje horizontal */
+    display: inline-flex; 
+    /* Establecemos las dimensiones y espaciado */
+    height: 85%; 
+    width: 74%;
+    /* margin-left: 25%; */
+    /* Establecemos un color de fondo */
+    background-color: orange; 
+    /* Centramos los objetos que este elemento contiene */
+    align-items: center; 
+    justify-content: center; 
+}
+/* Modificamos nuestro boxModel */
+#box{
+    /* Habilitamos la forma de despliegue de bloque para facilitar su movilidad y ajustabilidad*/
+    display: block; 
+    /* Establecemos sus dimensiones */
+    width: inherit; /* Con la palabra clave de 'inherit', al atributo que la use se le asigna el valor de ese atributo del padre del objeto */ 
+    height: 90%;
+        /* El atributo máximo de las dimensiones nos permite establecer un límite al crecimiento de un objeto */
+        /* max-width: 50px; 
+        max-height: 700px;  */
+    /* Establecemos el padding que es el espaciado interno */
+    padding: 15% 10% 20% 10%; /*1 Valor = (El mismo valor aplica para todos), 2 Valores = (Arriba y Abajo, Derecha e Izquiera), 3 Valores = (Arriba, Derecha e Izquierda, Abajo), 4 Valores = (Arriba, Derecha, Abajo, Izquierda) */
+    /* Modificamos el borde de nuestra caja */
+    border: 20px red solid; 
+    /* Cambiamos el color interior */
+    background-color: aquamarine; 
+    /* Modificamos el outline (se encuentra entre el margen y borde) */
+    outline: 5px blue solid; 
+    /* Modificamos el outline-offset (se encuentra entre borde y outline) */
+    outline-offset: 5px; /* Este atributo solo acepta 1 párametro de medida. Tampoco acepta color ni estilo */
+}
+
+

@@ -1,0 +1,99 @@
+/* Este archivo incluye los estilos para usar en documento 'formularioMejorado.html' */
+
+/* Establecemos el largo y alto de la página para que se extienda a toda la ventana */
+html, body{
+    width: 100%; 
+    height: 100%; 
+    padding: 0;
+    margin: 0;
+}
+/* Implementamos un fondo de pantalla de colores gradientes */
+body{
+    background: linear-gradient(#fff, #d25454);     
+}
+/* Establecemos en todos los objetos el mismo tipo de letra */
+*{
+    font-family: Arial; 
+}
+/* Modificamos el contenedor de todos los objetos */
+#contenedor{
+    /* Modificamos las dimensiones del objeto */
+    height: 100%;
+    width: 25%;
+    /* Centramos el objeto */
+    margin-left: 37.5%;
+    /* Establecemos un fondo negro pero transparente */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Alineamos los elementos del objeto */
+    display: flex; 
+    align-items: center; 
+}
+/* Modificamos el formulario */
+#formulario{      
+    /* Establecemos las dimensiones del objeto */
+    height: 50%;
+    width: 100%;    
+}
+/* Modificamos el título del formulario */
+h1{
+    /* Establecemos un margen superior */
+    margin-top: 10%;
+    /* Cambiamos el color */
+    color: rgb(253, 203, 203); 
+    /* Alineamos el texto */
+    text-align: center; 
+}
+/* Modificamos las etiquetas de todos los objetos que implementan la clase de 'elemento'*/
+.elemento label{
+    /* Establecemos las dimensiones de la etiqueta */
+    display: inline-block;
+    width: 100%;
+    /* Alineamos el texto de la etiqueta */
+    text-align: center;
+    /* Cambiamos el color de la letra */
+    color: white; 
+}
+/* Modificamos los campos de información de todos los objetos que implementan la clase de 'elemento' */
+.elemento input{
+    /* Establecemos las dimensiones del objeto */
+    display: inline-block;
+    width: 75%;
+    padding: 2%; 
+    margin-bottom: 5%; 
+    /* Centramos el campo de información y su texto correspondiente */
+    margin-left: 12.50%; 
+    text-align: center; 
+    /* Cambiamos el color de la letra */
+    color: white;
+    /* Establecemos un fondo transparente */
+    background-color: transparent;
+    /* Establecemos un border solamente inferior */
+    border: none;
+    border-bottom: 1px white solid;
+    
+}
+/* Modificamos el botón de la pantalla */
+#boton{
+    /* Establecemos las dimensiones y espacios del botón */
+    width: 50%;
+    padding: 3%;
+    margin: 10% 25% 10%;
+    /* Cambiamos el color del botón */
+    background-color: rgb(173, 41, 41);
+    /* Cambiamos el color de la letra */
+    color: white; 
+    /* Cambiamos el grosor y el tamaño de la letra */
+    font-size: 120%;
+    font-weight: 550;
+    /* Volvemos las letras mayúsculas */
+    text-transform: uppercase;
+    /* Le quitamos cualquier borde al botón */
+    border: none; 
+    /* Habilitamos un diferente mouse cuando el cursor pasa sobre el botón */
+    cursor: pointer;
+}
+/* Habilitamos un modo de pruebas con bordes negros en todos los objetos */
+/* *{
+    border: 2px black solid; 
+    box-sizing: border-box;
+} */

@@ -1,0 +1,13 @@
+/* CSS -  Cascading Style Sheets*/
+/* Este programa se llama de esta manera porque las propiedades que se establecen mediante esta herramiente son heredadas en cascada de padres a hijos 
+    Ejemplo: de body a h1 */
+/* El código escrito en la página HTML sobreescribe el código escrito aquí */
+/* El orden jerárquico (el primero siendo el de mejor posicionamiento) de código CSS es el siguiente */
+/*  1. Atributos establecidos directamente en el objeto HTML
+    2. Atributos establecidos en la <head> del archivo HTML
+    3. Atributos establecidos en el archivo CSS exterior (este archivo)
+ */
+*{
+    color: #ff0000;
+}
+

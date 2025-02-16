@@ -1,0 +1,35 @@
+/* Este archivo modifica el documento 'pseudoElementos.css' */
+
+/* Modificamos todos los elementos */
+*{
+    /* Cambiamos el tipo de letra */
+    font-family: Arial; 
+    /* Centramos todos los textos */
+    text-align: center; 
+}
+/* Creamos un div para hospedar nuestros párrafos */
+.contenedorAzul{
+    /* Establecemos un borde */
+    border: blue 5px dashed; 
+    /* Establecemos las dimensiones */
+    width: 50%; 
+    /* Centramos el objeto */
+    margin-left: 25%; 
+}
+/* Usando el concepto de psuedo elementos:  */
+    /* Modificamos la primera letra de los párrafos */
+    div p::first-letter{
+        font-size: 2em; 
+    }
+    /* Modificamos los colores de la selección de texto de los párrafos */
+    p::selection{
+        color: red; 
+        background-color: yellow;     
+    }
+    /* Añadimos texto al final y principio de los párrafos */
+    div p::before{
+        content: "- ";
+    }
+    div p::after{
+        content: '. '; 
+    }

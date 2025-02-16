@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Manejo de Fuentes en CSS </title>
+    <!-- Implementamos la hoja de estilos -->
+    <link rel = 'stylesheet' href = 'manejoDeFuentes.css'/>
+</head>
+<body>
+    <h1>
+        Manejo de Fuentes en CSS: 
+    </h1>
+    <div>
+        <p class = 'caja' style = 'width: 80%; font-size: 85%'>
+            NOTA: La mayoría de los atributos font, pueden ser resumidados en la sigiente sintáxis:
+            font: font-style font-variante font-weight *font-size /line-height *font-family; 
+            * = Obligatorio. Por favor respeta el orden establecido cuando use esta sintáxis
+
+        </p>
+        <p class = 'caja times'>
+            Times New Roman <br/> (Familia Serif)
+        </p>
+        <p class = 'caja georgia'>
+            Georgia <br/> (Familia Serif)
+        </p>
+        <p class = 'caja arial'> 
+            Arial <br/> (Familia Sans-serif)
+        </p>
+        <p class = 'caja verdana'>
+            Fuente Verdana <br/> (Familia Sans-serif)
+        </p>
+        <p class = 'caja courier'>
+            Courier New <br/> (Familia Monospace)
+        </p>
+        <p class = 'caja lucida'>
+            Lucida Handwriting <br/> (Familia Handwriting)
+        </p>
+        <!-- A esta caja le vamos a aplicar una clase importada de Google, con la cual decoraremos el texto -->
+        <p class = 'caja sofia font-effect-shadow-multiple'>
+            Fuente importada de Google, Sofia + Efecto Importado de Google
+        </p>
+    </div>
+</body>
+</html>

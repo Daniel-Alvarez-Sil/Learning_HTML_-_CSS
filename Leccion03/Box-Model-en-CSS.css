@@ -1,0 +1,17 @@
+/* Modificamos los objetos HTML */
+h1,h2{
+    /* Modificamos el color de la letra */
+    color: white; 
+    /* Modificamos el color de fonod */
+    background-color: red;
+    /* Establecemos el ancho */
+    width: 50%;
+    /* Establecemos un borde sólido y grueso */
+    border: 20px lavender solid; 
+    /* Establecemos un espaciado interior */
+    padding: 1%; /* El porcentaje es con relación al padre del objeto, en este caso es el cuerpo (body) */
+    /* Movemos el objeto hacia la derecha */
+     margin-left: 25%;
+    /* Centramos el texto */
+    text-align: center; 
+}

@@ -1,0 +1,32 @@
+/* Este documento contiene las hojas de estilos para el archivo coloresDeBordes.html */
+
+/* Modificamos todos los objetos */
+*{
+    font-family: Arial; 
+    text-align: center; 
+}
+
+/* Clase para implementar un borde de 4 colores */
+.cuatroColores{
+    border-color: black blue green red; 
+    border-style: solid; 
+    border-width: 5px; 
+}
+/* Clase para implementar un borde de 3 colores */
+.tresColores{
+    border-color: turquoise pink orange; 
+    border-style: solid; 
+    border-width: 5px; 
+}
+/* Clase para implementar un borde de 2 colores */
+.dosColores{
+    border-color: grey red; 
+    border-style: solid; 
+    border-width: 5px; 
+}
+/* Clase para implementar un borde de 1 color */
+.unColor{
+    border-color: purple; 
+    border-style: solid; 
+    border-width: 5px; 
+}

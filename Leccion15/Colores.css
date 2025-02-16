@@ -1,0 +1,76 @@
+/* Este archivo modifica el documento HTML 'Colores.html' */
+
+/* Modificamos todos los elementos */
+*{
+    /* Alineamos los textos */
+    text-align: center; 
+    /* Cambiamos el tipo de letra */
+    font-family: Arial; 
+}
+/* Modificamos las dimensiones de la pantalla */
+html, body{
+    height: 100%; 
+    width: 100%; 
+}
+/* Modificamos el título */
+h1{
+    /* Modificamos las dimensiones */
+    width: 100%;
+    height: 10%;
+    /* Retiramos los margenes */
+    margin: 0; 
+}
+/* Modificamos las cajas de colores */
+.caja{
+    /* Modificamos la forma de despliegue para que los objetos sean alineados en un eje horizontal */
+    display: inline-block;
+    /* Alineamos los objetos lado a lado iniciando en su punto más alto */
+    vertical-align: top; 
+    /* Modificamos el tamaño de letra */
+    font-size: 60%; 
+    /* Modificamos las dimensiones */
+    height: 40%;
+    width: 20%;
+    /* Establecemos un espaciado interior */
+    padding: 6.5% 0 0 0; 
+    /* Establecemos un borde */
+    border: 2px black solid; 
+    /* Establecemos que el padding y border sean parte de las dimensiones establecidas originalmente */
+    box-sizing: border-box; 
+    /* Cambiamos el color del texto */
+    color: white; 
+}
+/* Creamos clases para cambiar el color de fondo de las cajas */
+.rojo{
+    /* Establecemos un color por medio de los codenames de HTML */
+    background-color: crimson;
+}
+.rosa{
+    /* Establecemos un color por medio de los codenames de HTML */
+    background-color: deeppink; 
+}
+.rgb{
+    /* Establecemos un color por medio de la combinación RGB (Red, Green, Blue) */
+    background-color: rgb(131, 56, 236);
+}
+.rgba{
+    /* Establecemos un color por medio de la combinación RGBA (Red, Green, Blue, Alpha [Transparencia]) */
+    background-color: rgba(131, 56, 236, .5);
+}
+.hex{
+    /* Establecemos un color por medio de la asignación Hexadecimal */
+    background-color: #0091ad;
+}
+.hexA{
+    /* Establecemos un color por medio de la asignación Hexadecimal más un valor Alpha (Transparencia) */
+    background-color: #0091ad86; 
+}
+.hsl{
+    /* Establecemos un color por medio de la asignación HSL (Hue [Color], Saturation, Light)*/
+    background-color: hsl(195, 100%, 50%); 
+}
+.hsla{
+    /* Establecimiento de un color por medio de la asignación HSLA (Hue [Color], Saturation, Light, Alpha [Transparencia]) */
+    background-color: hsla(195, 100%, 50%, 0.5);
+
+}

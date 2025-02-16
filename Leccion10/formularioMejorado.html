@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LogIn </title>
+    <!-- Implementamos la hoja de estilos correspondiente a este archivo -->
+    <link rel = 'stylesheet' href = 'formularioMejorado.css'/>
+</head>
+<!-- Cuerpo del Documento -->
+<body>
+    <!-- Contenedor de todos los objetos -->
+    <div id = 'contenedor'>        
+        <!-- Formulario para tomar la información del usuario -->
+        <form id  = 'formulario' method = 'get'>
+            <!-- Título del formulario -->
+            <h1>
+                LogIn
+            </h1>
+            <!-- Nombre del Usuario -->
+            <div class = 'elemento'>                
+                <label for = 'user'> Usuario </label>
+                <br/>
+                <input placeholder = 'Ingresa tu usuario' type = 'text' id = 'user' name = 'user' required = 'true'/>                
+            </div>            
+            <!-- Contraseña del usuario -->
+            <div class = 'elemento'>
+                <label for = 'pswd'> Contraseña </label>
+                <br/>
+                <input placeholder = 'Ingresa tu contraseña' type = 'password' id = 'pswd' name = 'pswd' required = 'true'/>
+            </div>
+            <!-- Botón para Guardar la Información -->
+            <input id = 'boton' type = 'submit'/>
+        </form>
+    </div>
+</body>
+</html>

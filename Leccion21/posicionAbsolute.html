@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Posicion Absolute </title>
+    <link rel = 'stylesheet' href = 'posicionamientoDeElementos.css'/>
+</head>
+<body>
+    <h1>
+        Posicion Absolute: 
+    </h1>
+    <p>
+        Este posicionamiento es generalmente usado para objetos contenidos dentro de otro objeto. Con esta configuración, el objeto es posicionado relativo a su contenedor. Si el objeto
+        no cuenta con un objeto-padre, entonces es posicionado relativo al cuerpo de la página. Es importante mencionar que con este posicionamiento, el objeto no tiene una posición 
+        en el flujo del documento. 
+        <br/> <br/>
+        NOTA: El parámetro de posición 'absolute' no funciona si el objeto que lo aplica es hijo de un objeto 'static'. 
+    </p>
+    <div class = 'boton'>
+        <p>
+
+        </p>
+    </div>
+    <div class = 'boton' style = 'height: 75%; position: relative;'>
+        <p>
+            [Objeto Contenedor]
+        </p>
+        <a class = 'boton amarillo absolute' href = 'posicionamientoDeElementos.html' style = 'width: 100%;'>
+            <p>
+                Absolute <br/> [Objeto Hijo] <br/> bottom: 1% <br/>
+            </p>
+        </a>
+    </div>
+</body>
+</html>

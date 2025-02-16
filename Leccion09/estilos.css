@@ -1,0 +1,71 @@
+/* Estilos para el archivo index.html */
+
+/* Modificamos el largo y alto de la pantalla */
+html, body {
+    width: 100%; 
+    height: 100%;
+}
+
+/* Modificamos el tipo de letra de todos los elementos */
+* {
+    font-family: Arial; 
+}
+/* Modificamos el titulo */
+h1 {
+    /* Modificamos el largo y el alto */
+    width: 50%;
+    height: 5%;
+    /* Habilitamos un margen para centrar al elemento */
+    margin-left: 25%;
+    /* Centramos el texto del elemento */
+    text-align: center;
+    /* Cambiamos el color del texto del elemento */
+    color: rgb(214, 87, 109);
+}
+/* Modificamos el frame */
+iframe {
+    /* Establecemos no borde para el Frame */
+    border: none; 
+    /* Modificamos el largo y el alto */
+    height: 75%;
+    width: 50%;
+    /* Establecemos un margen a la izquierda para centrar el elemento */
+    margin-left: 25%;
+}
+/* Modificamos el botón */
+div{
+    /* Modificamos la altura del contenedor que abarca a el botón */
+    height: 10%;
+}
+botton {
+    /* Modificamos el color de fondo del botón */
+    background-color: rgb(220, 220, 220);
+    /* Modificamos el ancho y alto del botón (porcentajes en relación a su contenedor) */
+    width: 20%;
+    height: 100%;
+    /* Establecemos un margen izquierdo para centrar el elemento */
+    margin-left: 40%;
+    /* Establecemos la propiedad de display a 'block' para poder usar los atributos de width, height, margin, etc... */
+    display: block;
+}
+/* Modificamos el link del botón */
+a {
+    /* Usamos la propiedad de display 'flex' para facilitar el despliegue del link */
+    display: flex;
+    /* Modificamos las dimensiones de link (en relación a su contenedor) */
+    height: 100%; 
+    width: 100%;
+    /* Centramos los objetos del elemento */
+        /* Verticalmente */
+        align-items: center; 
+        /* Horizontalmente */
+        justify-content: center;
+    color: black;
+}
+/* Modificamos el evento tanto para el clic del botón, así como para pasar sobre el botón  */
+a:hover {
+    /* Modificamos el color del texto */
+    color: white;
+    /* Modificamos el color de fondo */
+    background-color: rgb(214, 87, 109)
+}

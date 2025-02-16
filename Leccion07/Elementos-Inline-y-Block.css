@@ -1,0 +1,12 @@
+/* Esta hoja de estilos modifica el archivo 'Elementos-Inline-y-Block.html' */
+/* Modificamos todos los objetos */
+* {
+    /* Cambiamos el tipo de letra */
+    font-family: Arial;
+    /* Centramos los textos */
+    text-align: center; 
+}
+/* Modificamos los divs */
+div {
+   border: 5px black solid;  
+}

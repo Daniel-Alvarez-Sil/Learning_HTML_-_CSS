@@ -1,0 +1,59 @@
+/* Este archivo modifica el documento 'flexBox.html' */
+
+/* Modificamos todos los elementos del documento */
+*{
+    /* Modificamos el tipo de letra */
+    font-family: Arial; 
+    /* Centramos los textos */
+    text-align: center; 
+}
+/* Establecemos las dimensiones de la pantalla */
+html, body{
+    width: 100%; 
+    height: 80%; 
+}
+/* Modificamos nuestros contenedores flex */
+.contenedorFlex{
+    /* Establecemos la forma de despliegue de Flex, con la cual es más sencilla el ajuste de las dimensiones y ubicaciones del objetos */
+    display: flex; 
+    /* Establecemos las dimensiones y espaciado del objeto */
+    width: 49%; 
+    height: 50%;
+    margin-left: 25%; 
+    margin-top: 1%; 
+    /* Establecemos la dirección en la que los elementos de este objeto serán desplegados */
+    flex-direction: row; /* Con esta configuración, los hijos de este objeto serán desplegados horizontalmente */
+    /* Establecemos la configuración adicional sobre el eje horizontal de los hijos de este objeto */
+    justify-content: center; 
+    /* Cambiamos el color del texto */
+    color: black; 
+}
+/* Modificamos la configuración vertical de los hijos del contenedor flex */
+/* Esta opciones que nos ofrece la disposición flex es de las más usadas en HTML/CSS, ya que es muy sencillo centrar objetos */
+.contenedorFlex.center{
+    align-items: center; 
+    /* Cambiamos los colores del contenedor */
+    background: crimson; 
+}
+.contenedorFlex.baseline{
+    align-items: baseline; 
+    /* Cambiamos los colores del contenedor */
+    background: aquamarine; 
+}
+.contenedorFlex.flexEnd{
+    align-items: flex-end; 
+    /* Cambiamos el color del contenedor */
+    background: greenyellow;
+}
+.contenedorFlex.flexStart{
+    align-items: flex-start; 
+    /* Cambiamos los colores del contenedor */
+    background: grey; 
+}
+/* Modificamos los párrafos de los contenedores */
+p{
+    /* Establecemos espaciado */
+    margin: 1%;
+    /* Cambiamos el color de fondo */
+    background-color: white; 
+}

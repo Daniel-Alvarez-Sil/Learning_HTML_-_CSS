@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formularios en HTML </title>
+</head>
+<body>
+    <h1>
+        Formularios en HTML: 
+    </h1>
+    <!-- El objeto de formulario ('form') en HTML nos permite solicitar información del usuario -->
+    <!-- Dos de los métodos más comunes para transferir información de cliente a servidor son GET y POST -->
+    <!-- En resumen, el método GET ocupa la URL para envíar la información al servidor, por lo que no es útil para mantener la integridad de la información -->
+    <!-- El método POST es más seguro para transferir información. También, es más eficiente en otros aspectos que el método GET -->    
+    <form method = 'post'> 
+        <!-- Añadimos un marco a nuestro formulario -->
+        <fieldset>
+            <!-- Insertamos un título a nuestro marco -->
+            <legend> Datos </legend>
+            <!-- Insertamos un campo que el usuario no pueda modificar -->
+            <div>
+                <label for = 'idPersona'> ID: </label>
+                <input type = 'number' id = 'idPersona' name = 'idPersona' value = '001' readonly = 'true'/>
+            </div>
+            <!-- Insertamos un campo no visible para los usuarios -->
+            <input type = "hidden" id = 'nombreDeSistema' name = 'nombreDeSistema' value = 'GTP'/>
+            <!-- Insertamos una etiqueta y un campo para que el usuario ingrese su nombre -->
+            <div>
+                <label for = 'nombre'> Nombre: </label>
+                <input type = 'text' placeholder = 'Ingresa tu nombre' id = 'nombre' required = 'true' name = 'nombre'/>
+            </div>            
+            <!-- Insertamos una etiqueta y un campo para que el usuario ingrese su apellido -->
+            <div>
+                <label for = 'apellido'> Apellido: </label>
+                <input type = 'text' placeholder = 'Ingresa tu apellido' id = 'apellido' required = 'true' name = 'nombre'/>
+            </div>
+            <!-- Insertamos una etiqueta y un campo para que el usuario ingrese su edad -->
+            <div>
+                <label for = 'edad'> Edad: </label>
+                <input type = 'number' placeholder = 'Ingresa tu edad' id = 'edad' required = 'true' name = 'edad'/>
+            </div>
+            <!-- Insertamos un radiobox para que el usuario seleccione su género -->
+            <label> Género: </label>
+            <div>
+                <input type = 'radio' id = 'masculino' required = 'true' name = 'genero' value = 'masculino'/>
+                <label for = 'masculino'> Masculino </label>
+                <br/>
+                <input type = 'radio' id = 'femenino' required = 'true' name = 'genero' value = 'femenino'/>
+                <label for = 'femenino'> Femenino </label>
+            </div>
+            <!-- Insertamos un checkbox para que el usuario seleccione sus gustos musicales -->
+            <label> Gustos Musicales: </label>
+            <div>
+                <input type = 'checkbox' id = 'rock' required = 'true' name = 'musica' value = 'rock'/>
+                <label for = 'rock'> Rock </label>
+                <br/>
+                <input type ='checkbox' id = 'jazz' required = 'true' name = 'musica' value = 'jazz'/>
+                <label for = 'jazz'> Jazz </label>
+                <br/>
+                <input type = 'checkbox' id = 'cumbia' required = 'true' name = 'musica' value = 'cumbia'/>
+                <label for = 'cumbia'> Cumbia </label>
+                <br/>
+                <input type = 'checkbox' id = 'K-Pop' required = 'true' name = 'musica' value = 'K-Pop'/>
+                <label for = 'K-Pop'> K-Pop </label>
+            </div>
+            <!-- Insertamos un Combo-Box para que el usuario escoja su marca de auto favorita -->
+            <label> Marca de Auto Favorita: </label>
+            <div>
+                <select id = 'autos' name = 'autos'>
+                    <option value = 'volvo'> Volvo </option>
+                    <option value = 'fiat' selected = 'true'> Fiat </option>
+                    <option value = 'mercedes benz'> Mercedes Benz </option>
+                    <option value = 'chrysler'> Chrysler </option>
+                </select>
+            </div>
+            <!-- Insertamos un cuadro de texto para que el usuario pueda ingresar un comentario -->
+            <label for = 'text'> Comentarios: </label>
+            <div>
+                <textarea id = 'text' name = 'text' cols = 30 rows = 2>Comentarios
+                    
+                </textarea>
+            </div>
+            <!-- Insertamos una etiqueta y un campo para que el usuario ingrese su correo -->
+            <div>
+                <label for = 'correo'> Correo: </label>
+                <input type = 'email' placeholder = 'Ingresa tu correo' id = 'correo' required = 'true' name = 'correo'/>
+            </div>
+            <!-- Insertamos una etiqueta y un campo para que el usuario ingrese su contraseña -->
+            <div>
+                <label for = 'contrasena'> Contraseña: </label>
+                <input type = 'password' placeholder = 'Ingresa tu contraseña' id = 'contrasena' required = 'true' name = 'contrasena'/>
+            </div>
+            <!-- Establecemos 3 botones; el primero nos permite enviar información de manera normal, mientras que el segundo ignora las disposiciones de los campos y no valida la información de ellos y el tercero nos permite limpiar toda la pantalla -->
+            <div>
+                <input type = 'submit' value = 'Enviar'/>
+                <input type = 'submit' formnovalidate = 'formnovalidate' value = 'Enviar sin Validar'/>
+                <input type = "reset" value = 'Limpiar'/>
+            </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

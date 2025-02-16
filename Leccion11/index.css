@@ -1,0 +1,104 @@
+/* Este archivo modifica el documento html 'index.html' */
+/* Modificamos el tamaño de la pantalla para que se extienda en todo el espacio posible */
+html, body{
+    width: 100%; 
+    height: 100%; 
+    margin: 0;
+}
+/* Modificamos el título */
+header{
+    /* Cambiamos el color del título */
+    color: blue; 
+    /* Centramos el texto del título */
+    text-align: center; 
+    /* Establecemos las dimensiones */
+    width: 100%; 
+    height: 7.5%; 
+}
+/* Modificamos la barra de navegación */
+nav{
+    /* Establecemos sus dimensiones */
+    width: 20%; 
+    height: 84%; 
+    /* Cambiamos el despliegue del objeto para que no sea considerado en el despliegue de la pantalla */
+    position: absolute;
+}
+/* Modificamos los elementos de la barra de navegación */
+nav a{
+    /* Establecemos las dimensiones y espacios externos e internos */
+    width: 100%; 
+    padding: 5%;
+    margin: 3% 0;
+    /* Alineamos los elementos verticalmente */
+    display: block;
+    /* Eliminamos el subrayado del link */
+    text-decoration: none; 
+    /* Cambiamos el color del texto */
+    color: white; 
+    /* Cambiamos el fondo de los elementos */
+    background-color: black; 
+    border-radius: 0 25% 0 25%; 
+}
+/* Modificamos las secciones */
+section{
+    /* Cambiamos el despliegue del objeto para que sea desplazado en un eje horizontal */
+    display: inline-block;      
+    /* Establecemos las dimensiones y espaciado*/
+    margin: 1% 2% 0 22%;   /* Arriba Derecha Abajo Izquierda */
+    height: 40%; 
+    width: 77%;
+    /* Establecemos el fondo de la sección */
+    background-color: rgb(202, 202, 202);
+    border-radius: 4px;  
+}
+/* Modificamos el nombre del autor de la 1era sección */
+aside{
+    /* Establecemos un espaciado interior */
+    padding: 2.5%; 
+    /* Establecemos las dimensiones y locación */
+    width: 25%; 
+    margin: 10% 0 0 75%; 
+    /* Modificamos el texto */
+    text-transform: uppercase; 
+    font-weight: 700;
+}
+/* Modificamos los artículos de la segunda sección */
+article{
+    /* Modificamos el fondo */
+    background-color: rgb(218, 218, 218); 
+    /* Establecemos sus dimensiones y espaciado */
+    height: 80%;
+    width: 90%;
+    margin-left: 5%;    
+}
+/* Modificamos los artículos de la segunda sección */
+h3{
+    /* Establecemos las dimensiones y el espaciado */
+    width: 75%; 
+    padding: 3.50%; 
+    margin-left: 12.5%;
+    /* Centramos los objetos */
+    text-align: center; 
+    margin: 1% 12.5% 1% 12.5%; 
+    /* Modificamos el fondo */
+    background-color: rgb(234, 234, 234);
+    border-radius: 15px; 
+     
+}
+/* Modificamos el pie de la página */
+footer{
+    /* Alineamos el texto */
+    text-align: center; 
+    /* Establecemos sus dimensiones */
+}
+/* Modificamos todos los objetos */
+*{
+    /* Establecemos el espaciado por default (puede ser sobreescrito en cada objeto) */
+    margin: 0;
+    /* Cambiamos el tipo de letra */
+    font-family: Arial; 
+    /* Habilitamos un borde negro a todos los objetos para facilitar las pruebas */
+    border: 1px solid black; 
+    /* Establecemos que las dimensiones del borde no añadan más espacio a las dimensiones del objeto que envuelve */
+    box-sizing: border-box;
+}

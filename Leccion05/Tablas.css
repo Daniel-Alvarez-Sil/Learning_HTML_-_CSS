@@ -1,0 +1,48 @@
+/* Modificamos los estilos para el archivo 'Tablas.html' */
+
+/* Modificamos la letra de todos los elementos*/
+*{
+    font-family: Arial; 
+}
+/* Modificamos la tabla */
+table{
+    width: 100%;
+}
+table, caption, th, td {
+    /* Establecemos un borde en la tabla */
+    border: 5px solid black; 
+    /* Quitamos el espacio entre los bordes */
+    border-collapse: collapse; 
+    /* Centramos los textos */
+    text-align: center;
+    /* Añadimos un espaciado interior */
+    padding: 1%;
+}
+    /* Título de la Tabla */
+    caption{
+        /* Establecemos un color de letra */
+        color: #e63946;
+        /* Modificamos el tamaño y el grosor de la letra */
+        font-size: 175%;
+        font-weight: 900;
+        /* Quitamos el borde inferior del título de la tabla */
+        border-bottom: none;
+    }
+    /* Cabeceros de la Tabla */
+    th{
+        /* Establecemos un color de fondo y de letra */
+        color: white; 
+        background-color: #1d3557;
+        /* Modificamos el tamaño y grosor de la letra */
+        font-size: 125%;
+        font-weight: 600;
+    }
+    /* Modificamos la data de la tabla */
+        /* Filas pares */
+        tr:nth-child(even){
+            background-color: #f1faee;
+        }
+        /* Filas impares */
+        tr:nth-child(odd){
+            background-color: #a8dadc;
+        }

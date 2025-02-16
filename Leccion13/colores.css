@@ -1,0 +1,36 @@
+/* Esta hoja de estilos es implementada en el archivo colores.html */
+
+/* Clases para implementar distintos tipos de colores */
+    /* Rojo */
+    .rojo{
+        background-color: firebrick;
+    }
+    /* Rosa */
+    .rosa{
+        background-color: hotpink; 
+    }
+    /* Amarillo */
+    .amarillo{
+        background-color: gold;
+    }
+    /* Violeta */
+    .violeta{
+        background-color: blueviolet; 
+    }
+    /* Verde */
+    .verde{
+        background-color: lime; 
+    }
+    /* Azul */
+    .azul{
+        background-color: turquoise; 
+    }
+/* Clases en cuyos objetos correspondientes los colores de texto serán cambiados a: */
+    /* Blanco */
+    .rojo, .rosa, .violeta{
+        color: white; 
+    }
+    /* Negro */
+    .amarillo, .verde{
+        color: black; 
+    }

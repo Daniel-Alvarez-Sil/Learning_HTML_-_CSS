@@ -1,0 +1,53 @@
+/* Este archivo contiene las hojas de estilo CSS para el documento tiposDeBordes.html */
+
+/* Modificamos todos los elementos */
+*{
+    text-align: center; 
+    font-family: Arial; 
+}
+/* Clases para implementar bordes de distintos tipos */
+    /* Borde Sólido */
+    .solido{
+        border: 10px black solid; 
+    }
+    /* Borde Discontinuo */
+    .discontinuo{
+        border: 10px black dashed;
+    }
+    /* Borde Doble */
+    .doble{
+        border: 10px black double; 
+    }
+    /* Borde con Puntos */
+    .punteado{
+        border: 10px black dotted; 
+    }
+    /* Borde con Surco */
+    .surco{
+        border: 10px black groove;
+    }
+    /* Borde Crestado */
+    .cresta{
+        border: 10px black ridge;
+    }
+    /* Borde con Recuadro */
+    .recuadro{
+        border: 10px black inset; 
+    }
+    /* Borde con Recuadro Inverso */
+    .recuadroInverso{
+        border: 10px black outset; 
+    }
+    /* Sin Borde */
+    .sinBorde{
+        border: none; 
+    }
+    /* Borde Oculto */
+    .oculto{
+        border: hidden; 
+    }
+    /* Borde Mixto */
+    .mixto{
+        border-width: 10px; 
+        border-style: dotted solid double ridge; 
+    }

@@ -1,0 +1,50 @@
+/* Modificamos los elementos del archivo 'Links-con-Botones.html' */
+
+/* Modificamos el tipo de letra de todos los objetos */
+*{
+    font-family: Arial; 
+}
+/* Establecemos el largo del cuerpo para que ocupe toda la pantalla */
+body{
+    width: 100%;
+}
+/* Modificamos el título y nuestro hipervinculos */
+h1, a {
+    /* Con este comando, permitimos que elementos inline (hipervinculos) mantengan sus propiedades nativas y obtengan nuevas propiedades como width y height*/
+    display: inline-block;
+    /* Permitimos que las dimensiones de los objetos sean calculadas tomando en cuentas su margenes, padding y bordes */
+    box-sizing: border-box;
+    /* Establecemos que los objetos se extiendan a lo largo de la mitad de la pantalla */
+    width: 50%; 
+    /* Establecemos un espaciado interior */
+    /* padding: 2.5%; */
+    /* Centramos el objeto y el texto, respectivamente */
+    margin-left: 25%;
+    text-align: center;  
+    /* Establecemos un borde */
+    border: 5px red solid; 
+}
+/* Modificammos el botón */
+button {
+    /* Establecemos su anchura a un 80% la anchura de su padre */
+    width: 100%;
+    /* Espaciado interior */
+    padding: 2.5%;
+    /* Modificamos los colores del botón */
+    color: white; 
+    background-color: cadetblue;
+    /* Modificamos el tamaño y grosor de la letra */
+    font-size: 200%;
+    font-weight: 900;
+}
+
+/* Establecemos acciones para los eventos asociados al botón */
+    /* Establecemos el color natural del link */
+    a:link, a:visited{
+        border-color: black;
+    }
+    /* Establecemos el color del link/botón cuando el mouse esté sobre él o esté seleccionado */
+    a:hover, a:active{
+        border-color: red;
+    }
+

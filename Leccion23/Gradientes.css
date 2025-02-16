@@ -1,0 +1,76 @@
+/* Este archivo contiene la hoja de estilo para el documento 'Gradientes.html' */
+
+/* Modificamos todos los objetos */
+*{
+    /* Modificamos el tipo de letra */
+    font-family: Arial; 
+    /* Centramos los textos */
+    text-align: center; 
+    /* No permitimos que los bordes añadan tamaño a las dimensiones originales de los objetos  */
+    box-sizing: border-box; 
+    /* Eliminamos el margen */
+    margin: 0; 
+
+}
+/* Establecemos las dimensiones y espaciado de la pantalla */
+html, body{
+    width: 100%; 
+    height: 100%; 
+}
+/* Creamos una clase para agregar borde */
+.borde{
+    /* Establecemos un borde */
+    border: black 5px solid; 
+}
+/* Creamos un contenedor para nuestros ejemplos de gradientes */
+.contenedor{
+    /* Alineamos los objetos lado a lado */
+    vertical-align: top; 
+    /* Establecemos sus dimensiones */
+    height: 50%; 
+    width: 49%; 
+    /* Desplegamos los objetos de esta clase en un eje horizontal pero manteniendo las propiedades de bloque */
+    display: inline-block; 
+}
+/* Modificamos los títulos de los contenedores de gradientes */
+.titulo{
+    /* Modificamos las dimensiones y espaciado */
+    height: 19%; 
+    width: 80%;
+    margin-left: 10%;
+    /* Establecemos un scroll bar por si el texto no cabe */     
+    overflow: auto; 
+}
+/* Creamos un contenedor para los gradientes */
+.gradiente{
+    /* Establecemos sus dimensiones y espaciado */
+    height: 80%; 
+    width: 80%; 
+    margin-left: 10%; 
+}
+/* Creamos clases para la modificación de fondos para que tengan gradientes */
+.normal{
+    /* Gradiente de arriba a abajo */
+    background: linear-gradient(grey, white);
+}
+.derecha{
+    /* Gradiente de izquierda a derecha */
+    background: linear-gradient(to right, purple, blue); 
+}
+.normalTres{
+    /* Gradiente de arriba a abajo con 3 colores */
+    background: linear-gradient(black, grey, white);
+}
+.esquinaDerecha{
+    /* Gradiente hacia la esquina derecha */
+    background: linear-gradient(to bottom right, red, yellow); 
+}
+.angulo{
+    /* Gradiente con angulo establecido manualmente */
+    background: linear-gradient(145deg, blue, aquamarine);
+}
+.circular{
+    /* Gradiente circular de afuera hacia adentro */
+    background: radial-gradient(circle, pink, grey); 
+}
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Selectores </title>
+    <!-- Implementamos una hoja de estilos -->
+    <link rel = 'stylesheet' href = 'selectores.css'/>
+</head>
+<body>
+    <h1>
+        Selectores en CSS: 
+    </h1>
+    <h2>
+        Selectores Descendientes (en cualquier nivel interno): 
+    </h2>
+    <div class = 'selectorDescendienteDe'>
+        DIV 1
+        <p>
+            Renglón 1
+        </p>
+        <p>
+            Renglón 2
+        </p>
+        <div>
+            DIV 2
+            <p> Renglón 3 </p>
+        </div>
+    </div>
+    <h2>
+        Selectores Hijo (child): 
+    </h2>
+    <div class = 'selectorHijo'>
+        DIV 1
+        <p>
+            Renglón 1
+        </p>
+        <p>
+            Renglón 2
+        </p>
+        <div>
+            DIV 2
+            <p>
+                Renglón 3
+            </p>
+        </div>
+    </div>
+    <h2>
+        Selectores Adyacentes: 
+    </h2>
+    <div class = 'selectorAdyacente'>
+        DIV 1
+        <p>
+            Renglón 1
+        </p>
+        <p>
+            Renglón 2            
+        </p>
+        <div>
+            DIV 2
+            <p>
+                Renglón 3
+            </p>
+        </div>
+    </div>
+    <p>
+        Renglón 4
+    </p>
+    <h2>
+        Selectores Adyacentes Hermanos (siblings):
+    </h2>
+    <div class = 'selectorAdyacenteHermano'>
+        DIV 1
+        <p>
+            Renglón 1
+        </p>
+        <p>
+            Renglón 2            
+        </p>
+        <div>
+            <p>
+                Renglón 3
+            </p>
+        </div>
+    </div>
+    <p>
+        Renglón 4
+    </p>
+    <p>
+        Renglón 5
+    </p>
+</body>
+</html>

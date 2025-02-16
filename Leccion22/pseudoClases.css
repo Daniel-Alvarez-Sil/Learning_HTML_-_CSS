@@ -1,0 +1,48 @@
+/* Este archivo contiene la hoja de estilos del documento 'pseudoClases.html' */
+
+/* Modificamos todos los elementos del documento */
+*{
+    /* Centramos los textos */
+    text-align: center; 
+    /* Modificamos el tipo de letra */
+    font-family: Arial; 
+}
+/* Modificamos el div que contiene nuestro párrafo oculto */
+.contenedor{
+    /* Establecemos un borde */
+    border: black 15px inset;
+    /* Establecemos las dimensiones del objeto  */
+    width: 50%; 
+    margin-left: 25%; 
+}
+/* Modificamos nuestros párrafo oculto */
+.oculto{
+    display: none;     
+}
+/* Usando pseudo clases, modificamos el evento de hover (pasar el cursor sobre) de nuestro div */
+.contenedor:hover{
+    /* Cambiamos el color interior */
+    background-color: gray; 
+    /* Modificamos el color del texto */
+    color: white; 
+}
+/* Usando pseudo clases, modificamos el evento de hover de nuestro párrafo oculto  */
+.contenedor:hover p.oculto{
+    /* Habilitamos la visualización del párrafo */
+    display: block; 
+    /* Cambiamos el color de su fondo */
+    background-color: white; 
+    /* Cambiamos el color de su texto */
+    color: black; 
+    /* Establecemos un borde */
+    border: 10px black outset; 
+}
+/* Modificamos las imagenes */
+img{
+    /* Transparentamos las imagenes */
+    opacity: 0.5; 
+}
+/* Usando pseudo clases, permitimos que las imagenes recobren opacidad cuando el cursor pasa sobre ellas */
+img:hover{
+    opacity: 1; 
+}

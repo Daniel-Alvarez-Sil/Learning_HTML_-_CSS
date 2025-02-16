@@ -1,0 +1,27 @@
+/* Este archivo contiene los estilos necesarios para el documento redondeoDeBordes.html */
+
+/* Modificamos todos los objetos */
+*{
+    font-family: Arial; 
+    text-align: center; 
+}
+/* Clase para implementar cuatro bordes redondeados */
+.cuatroBordes{
+    border-radius: 100px; 
+}
+/* Clase para implementar tres bordes redondeados */
+.tresBordes{
+    border-radius: 100px 100px 100px 0px; 
+}
+/* Clase para establecer dos bordes redondeados */
+.dosBordes{
+    border-radius: 100px 100px 0px 0px;
+}
+/* Clase para establecer un borde redondeado */
+.unBorde{
+    border-radius: 100px 0px 0px 0px; 
+}
+/* Clase para establecer las propiedades básicas de todos los bordes */
+.cuatroBordes, .tresBordes, .dosBordes, .unBorde{
+    border: 10px black solid; 
+}

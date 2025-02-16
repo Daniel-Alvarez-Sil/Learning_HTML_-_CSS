@@ -1,0 +1,44 @@
+/* Este documento modifica el archivo 'boxShadow.html' */
+
+/* Modificamos todos los objetos */
+*{
+    /* Centramos los objetos */
+    text-align: center; 
+    /* Cambiamos el tipo de letra */
+    font-family: Arial; 
+    /* No permitimos que los bordes añadan más espacio a las dimensiones originales del objeto */
+    box-sizing: border-box; 
+}
+/* Establecemos las dimensiones y espaciado de la pantalla */
+html, body{
+    width: 100%; 
+    height: 100%; 
+    margin: 0;
+}
+/* Modificamos nuestra caja sombreada */
+.cajaSombra{
+    /* Establecemos sus dimensiones y espaciado */
+    width: 50%; 
+    height: 50%; 
+    margin: 10% 25%; 
+    /* Establecemos un borde */
+    border: 5px black solid; 
+    /* Añadimos sombra al objeto */
+    box-shadow: 5px 5px 5px 3px grey; /* Atributos: Desplazamiento en el eje X, desplazamiento en el eje Y, difusión de la sombra, propagación de la sombra */
+    /* Establecemos un scroll si es que el texto se desborda */
+    overflow: auto; 
+}
+/* Modificamos los párrafos */
+p{
+    /* Establecemos sus dimensiones y espaciado*/
+    width: 50%; 
+    height: 50%; 
+    margin-left: 25%; 
+    /* Cambiamos el tamaño del texto */    
+    font-size: vw; 
+    /* Centramos el objeto */
+    position: relative; 
+    top: 30%; 
+    /* bottom: 0;  */
+    /* border: black 5px solid;  */
+}

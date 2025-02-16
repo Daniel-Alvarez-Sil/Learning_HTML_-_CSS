@@ -1,0 +1,53 @@
+/* Este archivo modifica el documento selectoresDescendientes.html */
+
+/* Modificamos todos los objetos */
+*{
+    /* Modificamos el tipo de la letra */
+    font-family: Arial; 
+    /* Centramos todos los textos */
+    text-align: center; 
+}
+/* Modificamos todos los divs del documento */
+div{
+    /* Establecemos sus dimensiones y espaciado */
+    width: 50%; 
+    margin-left: 25%;
+    /*Establecemos un borde */
+    border: 5px black solid; 
+}
+/* Aquí entra el concepto de selectores descendientes */
+/* Modificamos los párrafos que sean descendientes (no importa cuan internos) del div que aplique esta clase */
+/* Los selectores descendientes nos ayudan a escoger elementos HTML que quizás no se encuentren en el mismo nivel pero que son descendientes del antecesor */
+div.selectorDescendienteDe p{
+    /* Modificamos el color del texto */
+    color: red; 
+    /* Subrayamos el texto */
+    background-color: aquamarine; 
+}
+/* Aquí entra el concepto de selectores hijo */
+/* Modificamos los párrafos que sean únicamente directos descendientes (hijos) del div que aplique esta clase */
+/* Los selectores hijo nos ayudan a escoger elementos HTML que se encuentran directamente debajo del antecesor */
+div.selectorHijo > p{
+    /* Modificamos el color del texto */
+    color: blue; 
+    /* Subrayamos el texto */
+    background-color: lightblue; 
+}
+/* Aquí entra el concepto de selectores adyacentes */
+/* Modificamos el único párrafo adyacente del div que aplique esta clase */
+/* Los selectores adyacentes nos ayudan escoger un elemento HTML que se encuentra al mismo nivel que el antecesor y directamente después */
+div.selectorAdyacente + p{
+    /* Modificamos el color del texto */
+    color: blueviolet; 
+    /* Subrayamos el texto */
+    background-color: pink; 
+}
+/* Aquí entra el concepto de selectores adyacentes hermanos */
+/* Modificamos todos los párrafos adyacentes del div que aplique a esta clase  */
+/* Los selectores adyacentes hermanos nos ayudan a escoger elementos HTML que se encuentran al mismo nivel que el antecesor y directamente después */
+div.selectorAdyacenteHermano ~ p{
+    /* Modificamos el color del texto */
+    color: black; 
+    /* Subrayamos el texto */
+    background-color: grey; 
+}

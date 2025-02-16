@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a CSS</title>
+    <!-- CSS es un lenguaje de programación que nos permite aplicar estilos a objetos HTML -->
+    <!-- Hay distintas maneras de añadir programación CSS a nuestro documento HTML -->
+    <!-- Un forma es mediante una etiqueta de estilos, 'style' -->
+    <style>
+        h1{
+            color: red; 
+        }
+    </style>
+    <!-- Otra forma es mediante una etiqueta de link que haga referencia a un archivo .css -->
+    <link rel = 'stylesheet' href = 'index.css'/>
+    <!-- Finalmente, otra forma es añadir el estilo CSS directamente a la etiqueta del objeto -->
+    <!-- En cuanto a la jerarquía de prioridad, el orden de prioridad es el siguiente: 1.- CSS directamente en el objeto, 2.- CSS de archivo externo, 3.- CSS de etiqueta 'style' -->
+</head>
+<body>
+    <h1 style = 'color:blue' class = 'claseHeader'>
+        Introducción a CSS: 
+    </h1>
+    <p>
+        Párrafo 1
+    </p>
+    <!-- El atributo ID nos permite asociar a un solo objeto un patrón de estilos en CSS -->
+    <div id = 'div1'>
+        <!-- El atribuo de CLASS nos permite asociar varios objetos a un patrón de estilos en CSS -->
+        <h2>
+            Miembors del Div
+        </h2>
+        <p class = 'claseDiv'>
+            Miembro 1 del Div
+        </p>
+        <p class = 'claseDiv'>
+            Miembro 2 del Div
+        </p>
+        <!-- Podemos asociar más de una clase a un objeto -->
+        <p class = 'claseDiv texto_Grande'>
+            Miembro 3 del Div
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* Este archivo modifica el archivo 'Bookmarks.html' */
+
+/* Establecemos el tamaño de la pantalla */
+html, body{
+    height: 100%;
+    /* border: 5px black solid;  */
+
+}
+/* Modificamos todas las letras */
+* {
+    font-family: Arial;
+    /* border: 5px black solid; */
+    box-sizing: border-box;
+    margin: 0;
+}
+/* Modificamos todos los divs */
+div {
+    /* Establecemos el despliegue de box */
+    display: flex;
+    /* Alineamos los objetos del div */
+        /* Verticalmente */
+        align-items: center;
+        /* Horizontalmente */
+        justify-content: center;
+    /* Establecemos un borde */
+    border: 5px black solid;
+    /* Establecemos las dimensiones */
+    width: 50%;
+    height: 25%;
+    /* Establecemos un margen */
+    margin-left: 25%;
+    margin-bottom: 6.25%;
+    /* margin-top: ; */
+}
+
+a {
+    font-family: Arial; 
+}

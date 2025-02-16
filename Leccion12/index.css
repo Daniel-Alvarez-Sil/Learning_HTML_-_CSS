@@ -1,0 +1,35 @@
+/* Esta hoja de estilos aplica para el archivo HTML 'index.html' */
+
+/* Modificamos todos los objetos 'h1' */
+h1{
+    color: green; 
+}
+/* Modificamos el objeto asociado al id 'div1' */
+#div1{
+    border: 5px black solid; 
+    height: 100%; 
+
+}
+/* Modificamos los objetos asociados a la clase 'claseDiv' */
+.claseDiv{
+    text-align: center; 
+    color: red;  
+}
+/* Modificamos los objetos asociados a la clase texto_Grande */
+.texto_Grande{
+    font-size: 50px; 
+    font-weight: 600;
+}
+/* Uso del selector univeral. Con este selector, podemos modificar todos los objetos del documento HTML */
+*{
+    font-family: Arial; 
+    text-align: center;
+}
+/* Agrupación de varios objetos para una sola asignación de estilos */
+h2, h1{
+    border: 4px blueviolet solid; 
+}
+/* Asingación estilos a clases que estén específicamente asociadas a cierto objeto */
+h1.claseHeader{
+    text-transform: uppercase; 
+}
